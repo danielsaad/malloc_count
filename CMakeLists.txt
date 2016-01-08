@@ -6,4 +6,4 @@ set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}")
 set(CMAKE_CXX_FLAGS "-O2 -std=c++11") 
 
 add_library(malloc_count STATIC malloc_count.c stack_count.c malloc_count.h stack_count.h memprofile.h)
-install(TARGETS malloc_count ARCHIVE DESTINATION lib)
+install(TARGETS malloc_count ARCHIVE DESTINATION ${CMAKE_SOURCE_DIR}/lib)
